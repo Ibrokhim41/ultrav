@@ -19,15 +19,15 @@ const Footer = () => {
 
                 {/* social */}
                 <div className={`flex`}>
-                    <a className={`border border-white p-3 rounded-full hover:text-grey-dark hover:border-greytext-grey-dark hover:bg-white`} href="#">
+                    <div className={`border border-white p-3 rounded-full hover:text-grey-dark hover:border-greytext-grey-dark hover:bg-white`} href="#">
                         <FaFacebookF />
-                    </a>
-                    <a className={`mx-4 border border-white p-3 rounded-full hover:text-grey-dark hover:border-greytext-grey-dark hover:bg-white`} href="#">
+                    </div>
+                    <div className={`mx-4 border border-white p-3 rounded-full hover:text-grey-dark hover:border-greytext-grey-dark hover:bg-white`} href="#">
                         <FaInstagram />
-                    </a>
-                    <a className={`border border-white p-3 rounded-full hover:text-grey-dark hover:border-greytext-grey-dark hover:bg-white`} href="#">
+                    </div>
+                    <div className={`border border-white p-3 rounded-full hover:text-grey-dark hover:border-greytext-grey-dark hover:bg-white`} href="#">
                         <FaTelegramPlane />
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>

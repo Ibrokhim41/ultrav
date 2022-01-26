@@ -25,23 +25,23 @@ const Menu = ({ show, setShow }) => {
                 <li
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
-                    <a href="">About</a>
+                    <div href="">About</div>
                 </li>
                 <li
                     onClick={() => navigate.push("/products")}
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
-                    <a href="">Products</a>
+                    <div href="">Products</div>
                 </li>
                 <li
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
-                    <a href="">News & Events</a>
+                    <div href="">News & Events</div>
                 </li>
                 <li
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
-                    <a href="">Contact Us</a>
+                    <div href="">Contact Us</div>
                 </li>
             </ul>
 
