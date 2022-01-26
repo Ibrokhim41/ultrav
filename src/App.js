@@ -4,6 +4,7 @@ import Top from "./components/Top";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
 import InProducts from './components/InProducts';
+import About from './components/About';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/product" component={InProducts} />
                 <Route exact path="/products" component={Products} />
+                <Route exact path="/about" component={About} />
             </Switch>
             <Footer />
         </Router>

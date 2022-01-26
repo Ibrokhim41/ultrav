@@ -23,12 +23,19 @@ const Menu = ({ show, setShow }) => {
             />
             <ul className="w-full h-full flex flex-col justify-center items-center">
                 <li
+                    onClick={() => {
+                        navigate.push("/about")
+                        setShow(false)
+                    }}
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
                     <div href="">About</div>
                 </li>
                 <li
-                    onClick={() => navigate.push("/products")}
+                    onClick={() => {
+                        navigate.push("/products")
+                        setShow(false)
+                    }}
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
                     <div href="">Products</div>

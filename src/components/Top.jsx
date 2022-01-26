@@ -14,7 +14,7 @@ const Top = () => {
     const [show, setShow] = useState(false)
 
     return (
-        <div className="bg-white shadow-md">
+        <div className="bg-white shadow-md z-50">
             <div className="container flex justify-between items-center">
                 {/* logo */}
                 <img
@@ -24,7 +24,11 @@ const Top = () => {
 
                 {/* navigation */}
                 <nav className="hidden md:flex">
-                    <div className="mx-5 cursor-pointer">About</div>
+                    <div
+                        onClick={() => navigate.push("/about")}
+                        className="mx-5 cursor-pointer">
+                        About
+                    </div>
                     <div
                         onClick={() => navigate.push("/products")}
                         className="mx-5 cursor-pointer">

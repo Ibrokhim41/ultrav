@@ -1,5 +1,6 @@
 import product1 from "../assets/p1.jpg"
 import { useHistory } from 'react-router-dom';
+import Oppening from "./Oppeing";
 
 const Products = () => {
 
@@ -7,6 +8,7 @@ const Products = () => {
 
     return (
         <div className="container">
+            <Oppening />
             {/* title */}
             <div className="w-4/5 mt-5">
                 <div className="text-title">Products</div>
