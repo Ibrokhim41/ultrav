@@ -2,7 +2,6 @@ import booster from '../assets/2.jpg'
 import booster2 from '../assets/3.jpg'
 import booster3 from '../assets/4.jpg'
 import booster4 from '../assets/p3.jpg'
-import Gallery from "./Gallery";
 import Oppening from './Oppeing';
 
 const InProducts = () => {
