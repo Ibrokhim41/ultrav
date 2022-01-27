@@ -1,9 +1,11 @@
 import product1 from "../assets/p1.jpg"
 import { useHistory } from 'react-router-dom';
 import Oppening from "./Oppeing";
+import { useTranslation } from 'react-i18next';
 
 const Products = () => {
 
+    const {t} = useTranslation();
     const navigate = useHistory()
 
     return (
@@ -11,7 +13,7 @@ const Products = () => {
             <Oppening />
             {/* title */}
             <div className="w-4/5 mt-5">
-                <div className="text-title">Products</div>
+                <div className="text-title">{t("top.products")}</div>
                 <p className="text-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, tempora tenetur, quas aliquid maxime consequatur consectetur officia quo.</p>
             </div>
 

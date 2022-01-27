@@ -3,10 +3,12 @@ import { useEffect } from "react"
 import uz from "../../assets/uz.png";
 import ru from "../../assets/ru.png";
 import en from "../../assets/en.png";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const Menu = ({ show, setShow }) => {
 
+    const { t, i18n } = useTranslation();
     const navigate = useHistory();
 
     useEffect(() => {
@@ -29,7 +31,9 @@ const Menu = ({ show, setShow }) => {
                     }}
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
-                    <div href="">About</div>
+                    <div href="">
+                        {t("top.about")}
+                    </div>
                 </li>
                 <li
                     onClick={() => {
@@ -38,12 +42,16 @@ const Menu = ({ show, setShow }) => {
                     }}
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
-                    <div href="">Products</div>
+                    <div href="">
+                        {t("top.products")}
+                    </div>
                 </li>
                 <li
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
-                    <div href="">News & Events</div>
+                    <div href="">
+                        {t("top.news")}
+                    </div>
                 </li>
                 <li
                     onClick={() => {
@@ -52,16 +60,30 @@ const Menu = ({ show, setShow }) => {
                     }}
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
-                    <div href="">Contact Us</div>
+                    <div href="">
+                        {t("top.contacts")}
+                    </div>
                 </li>
             </ul>
 
             {/* language */}
             <div className="absolute bottom-20">
                 <div className="w-screen flex justify-center">
-                    <button style={{ backgroundImage: `url('${uz}')` }} className="w-8 h-8 bg-center bg-cover rounded-full mx-4 cursor-pointer shadow-md"></button>
-                    <button style={{ backgroundImage: `url('${ru}')` }} className="w-8 h-8 bg-center bg-cover rounded-full mx-4 cursor-pointer shadow-md"></button>
-                    <button style={{ backgroundImage: `url('${en}')` }} className="w-8 h-8 bg-center bg-cover rounded-full mx-4 cursor-pointer shadow-md"></button>
+                    <button
+                        onClick={() => i18n.changeLanguage("uz")}
+                        style={{ backgroundImage: `url('${uz}')` }}
+                        className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
+                    </button>
+                    <button
+                        onClick={() => i18n.changeLanguage("ru")}
+                        style={{ backgroundImage: `url('${ru}')` }}
+                        className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
+                    </button>
+                    <button
+                        onClick={() => i18n.changeLanguage("en")}
+                        style={{ backgroundImage: `url('${en}')` }}
+                        className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
+                    </button>
                 </div>
             </div>
         </div>

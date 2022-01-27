@@ -4,14 +4,17 @@ import { HiOutlineMail } from "react-icons/hi";
 import Oppening from "./Oppeing";
 import Iframe from 'react-iframe'
 import Subscribe from './Subscribe';
+import { useTranslation } from 'react-i18next';
 
 
 const ContactUs = () => {
 
+    const {t} = useTranslation();
+
     return (
         <div className="container">
             <Oppening />
-            <div className="product-title mt-10">Contact Us</div>
+            <div className="text-title my-10">{t("top.contacts")}</div>
             <div className="flex flex-wrap">
                 <div className="w-full md:w-1/3 px-3">
                     <div className='p-3 rounded-lg shadow-md'>
