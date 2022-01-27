@@ -4,10 +4,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs"
 import { useWindowDimensions } from '../hooks/WindowSIze';
+import { useHistory } from 'react-router-dom';
 
 const NewProducts = () => {
 
-    const {width} = useWindowDimensions();
+    const navigate = useHistory()
+    const { width } = useWindowDimensions();
 
     const settings = {
         infinite: true,
@@ -54,7 +56,11 @@ const NewProducts = () => {
                                 <p className="product-title">Booster</p>
                                 <p className="text-small text-grey-dark">For Face</p>
                             </div>
-                            <button className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">View Details</button>
+                            <button
+                                onClick={() => navigate.push("/product")}
+                                className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -66,7 +72,11 @@ const NewProducts = () => {
                                 <p className="product-title">Booster</p>
                                 <p className="text-small text-grey-dark">For Face</p>
                             </div>
-                            <button className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">View Details</button>
+                            <button
+                                onClick={() => navigate.push("/product")}
+                                className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -78,7 +88,11 @@ const NewProducts = () => {
                                 <p className="product-title">Booster</p>
                                 <p className="text-small text-grey-dark">For Face</p>
                             </div>
-                            <button className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">View Details</button>
+                            <button
+                                onClick={() => navigate.push("/product")}
+                                className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -90,7 +104,27 @@ const NewProducts = () => {
                                 <p className="product-title">Booster</p>
                                 <p className="text-small text-grey-dark">For Face</p>
                             </div>
-                            <button className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">View Details</button>
+                            <button
+                                onClick={() => navigate.push("/product")}
+                                className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full p-2">
+                    <div className="py-4 px-2 rounded-lg shadow-md">
+                        <img className="rounded-xl product-img object-cover" src={product1} alt="products" />
+                        <div className="flex justify-between items-center mt-4">
+                            <div className="flex flex-col">
+                                <p className="product-title">Booster</p>
+                                <p className="text-small text-grey-dark">For Face</p>
+                            </div>
+                            <button
+                                onClick={() => navigate.push("/product")}
+                                className="border h-fit p-2 border-blue-dark rounded-lg text-rm hover:bg-blue hover:text-white hover:border-blue">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>

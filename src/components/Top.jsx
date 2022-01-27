@@ -35,7 +35,11 @@ const Top = () => {
                         Products
                     </div>
                     <div className="mx-5 cursor-pointer">News & Events</div>
-                    <div className="mx-5 cursor-pointer">Contact Us</div>
+                    <div
+                        onClick={() => navigate.push("/contacts")}
+                        className="mx-5 cursor-pointer">
+                        Contact Us
+                    </div>
                 </nav>
 
                 {/* language */}

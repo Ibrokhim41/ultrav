@@ -11,7 +11,20 @@ const About = () => {
     return (
         <div className="container">
             <Oppening />
-            <div className="flex flex-wrap justify-between mt-10">
+            <div className="mt-10">
+                <div className="product-title text-center mb-4">“THE PIONEER in the field of ULTRA V LIFTING SYSTEM”</div>
+                <p className="text-center">
+                    Ultra V Co., Ltd. is a company that develops, manufactures, and supplies medical devices and functional cosmetics to domestic and overseas markets. It also manufactures PDO-Polydioxanone and PCL-Poly-Caprolactone for use in dermatology and plastic surgery. In order to supply more effective and safe products, we are carrying out clinical verification and diversifying our business through the affiliated Dermaster Clinic.
+                    <br />
+                    The medical suture, widely known as Ultra V-Lifting, is a representative brand of Ultra V. Based on the advantage of maximizing anti-aging effects with simple procedures, the range of application is getting wider with various treatment techniques.
+                    <br />
+                    Ultra V Cosmetic is pioneering new cosmetics market by launching high functional anti-aging products that are used in domestic and overseas hospitals based on patented technology and many years of clinical experiment.
+                    <br />
+                    As a leader in biomedical beauty, ULTRA V will take the lead in developing innovative products.
+                </p>
+
+            </div>
+            <div className="flex flex-wrap justify-between my-24">
                 <div className="flex w-full sm:w-1/4 justify-center flex-col items-center px-2">
                     <img src={passion} width="250px" alt="" />
                     <div className="flex flex-col items-center text-center">
