@@ -15,6 +15,7 @@ const Gallery = () => {
     const { width } = useWindowDimensions();
 
     const settings = {
+        autoplay: true,
         infinite: true,
         speed: 1200,
         slidesToScroll: 1,

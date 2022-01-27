@@ -22,20 +22,20 @@ const Carousel = () => {
     return (
         <div className="sm:container overflow-hidden">
             <Slider {...settings}>
-                <div className="carousel">
-                    <img className="w-full h-[300px] sm:h-[600px] object-cover" src={slider1} alt="ultraV" />
+                <div>
+                    <img className="w-full h-[300px] sm:h-[570px] object-cover" src={slider1} alt="ultraV" />
                 </div>
                 <div>
-                    <img className="w-full h-[300px] sm:h-[600px] object-cover" src={slider2} alt="ultraV" />
+                    <img className="w-full h-[300px] sm:h-[570px] object-cover" src={slider2} alt="ultraV" />
                 </div>
                 <div>
-                    <img className="w-full h-[300px] sm:h-[600px] object-cover" src={slider3} alt="ultraV" />
+                    <img className="w-full h-[300px] sm:h-[570px] object-cover" src={slider3} alt="ultraV" />
                 </div>
                 <div>
-                    <img className="w-full h-[300px] sm:h-[600px] object-cover" src={slider4} alt="ultraV" />
+                    <img className="w-full h-[300px] sm:h-[570px] object-cover" src={slider4} alt="ultraV" />
                 </div>
                 <div>
-                    <img className="w-full h-[300px] sm:h-[600px] object-cover" src={slider5} alt="ultraV" />
+                    <img className="w-full h-[300px] sm:h-[570px] object-cover" src={slider5} alt="ultraV" />
                 </div>
             </Slider>
         </div>
