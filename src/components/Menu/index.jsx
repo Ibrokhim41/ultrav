@@ -4,11 +4,11 @@ import uz from "../../assets/uz.png";
 import ru from "../../assets/ru.png";
 import en from "../../assets/en.png";
 import { useHistory } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
 const Menu = ({ show, setShow }) => {
 
-    const { t, i18n } = useTranslation();
+    // const { t, i18n } = useTranslation();
     const navigate = useHistory();
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const Menu = ({ show, setShow }) => {
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
                     <div href="">
-                        {t("top.about")}
+                        {/* {t("top.about")} */}About
                     </div>
                 </li>
                 <li
@@ -43,14 +43,14 @@ const Menu = ({ show, setShow }) => {
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
                     <div href="">
-                        {t("top.products")}
+                        {/* {t("top.products")} */}Products
                     </div>
                 </li>
                 <li
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
                     <div href="">
-                        {t("top.news")}
+                        {/* {t("top.news")} */}News & Events
                     </div>
                 </li>
                 <li
@@ -61,7 +61,7 @@ const Menu = ({ show, setShow }) => {
                     style={{ fontSize: "24px" }}
                     className="text-white py-2">
                     <div href="">
-                        {t("top.contacts")}
+                        {/* {t("top.contacts")} */} Contacts
                     </div>
                 </li>
             </ul>
@@ -70,17 +70,17 @@ const Menu = ({ show, setShow }) => {
             <div className="absolute bottom-20">
                 <div className="w-screen flex justify-center">
                     <button
-                        onClick={() => i18n.changeLanguage("uz")}
+                        // onClick={() => i18n.changeLanguage("uz")}
                         style={{ backgroundImage: `url('${uz}')` }}
                         className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
                     </button>
                     <button
-                        onClick={() => i18n.changeLanguage("ru")}
+                        // onClick={() => i18n.changeLanguage("ru")}
                         style={{ backgroundImage: `url('${ru}')` }}
                         className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
                     </button>
                     <button
-                        onClick={() => i18n.changeLanguage("en")}
+                        // onClick={() => i18n.changeLanguage("en")}
                         style={{ backgroundImage: `url('${en}')` }}
                         className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
                     </button>

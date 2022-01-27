@@ -6,14 +6,14 @@ import ru from "../assets/ru.png";
 import en from "../assets/en.png";
 import Menu from "./Menu";
 import { useHistory } from 'react-router-dom';
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 
 const Top = () => {
 
     const navigate = useHistory()
     const [show, setShow] = useState(false)
-    const { t, i18n } = useTranslation();
+    // const { t, i18n } = useTranslation();
 
     return (
         <div className="bg-white shadow-md z-50">
@@ -29,37 +29,37 @@ const Top = () => {
                     <div
                         onClick={() => navigate.push("/about")}
                         className="mx-5 cursor-pointer">
-                        {t("top.about")}
+                        {/* {t("top.about")} */}About
                     </div>
                     <div
                         onClick={() => navigate.push("/products")}
                         className="mx-5 cursor-pointer">
-                        {t("top.products")}
+                        {/* {t("top.products")} */}Products
                     </div>
                     <div className="mx-5 cursor-pointer">
-                        {t("top.news")}
+                        {/* {t("top.news")} */}News & Events
                     </div>
                     <div
                         onClick={() => navigate.push("/contacts")}
                         className="mx-5 cursor-pointer">
-                        {t("top.contacts")}
+                        {/* {t("top.contacts")} */}Contacts
                     </div>
                 </nav>
 
                 {/* language */}
                 <div className="hidden md:flex">
                     <button
-                        onClick={() => i18n.changeLanguage("uz")}
+                        // onClick={() => i18n.changeLanguage("uz")}
                         style={{ backgroundImage: `url('${uz}')` }}
                         className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
                     </button>
                     <button
-                        onClick={() => i18n.changeLanguage("ru")}
+                        // onClick={() => i18n.changeLanguage("ru")}
                         style={{ backgroundImage: `url('${ru}')` }}
                         className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
                     </button>
                     <button
-                        onClick={() => i18n.changeLanguage("en")}
+                        // onClick={() => i18n.changeLanguage("en")}
                         style={{ backgroundImage: `url('${en}')` }}
                         className="w-8 h-8 bg-center bg-cover rounded-full mx-1 cursor-pointer shadow-md">
                     </button>
