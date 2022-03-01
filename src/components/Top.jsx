@@ -39,6 +39,11 @@ const Top = () => {
                     <div className="mx-5 cursor-pointer">
                         {t("top.news")}
                     </div>
+                    <div 
+                        onClick={() => navigate.push("/gallery")}
+                        className="mx-5 cursor-pointer">
+                        {t("top.gallery")}
+                    </div>
                     <div
                         onClick={() => navigate.push("/contacts")}
                         className="mx-5 cursor-pointer">

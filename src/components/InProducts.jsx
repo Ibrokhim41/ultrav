@@ -76,7 +76,7 @@ const InProducts = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-b border-b-grey-light hover:bg-grey-light py-4 px-4 cursor-pointer group">
+                <div className="snap-start border-b border-b-grey-light hover:bg-grey-light py-4 px-4 cursor-pointer group">
                     {/* title */}
                     <div>Booster 2</div>
                     <div className="max-h-0 overflow-hidden transition-all duration-500 group-hover:max-h-[2000px]">

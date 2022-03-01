@@ -55,6 +55,17 @@ const Menu = ({ show, setShow }) => {
                 </li>
                 <li
                     onClick={() => {
+                        navigate.push("/gallery")
+                        setShow(false)
+                    }}
+                    style={{ fontSize: "24px" }}
+                    className="text-white py-2">
+                    <div href="">
+                        {t("top.gallery")}
+                    </div>
+                </li>
+                <li
+                    onClick={() => {
                         navigate.push("/contacts")
                         setShow(false)
                     }}
